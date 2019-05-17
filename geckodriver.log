@@ -398,4 +398,217 @@ console.error: BroadcastService:
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-[GPU 10880, Chrome
+[GPU 10880, Chrome1558061940451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZFcAqAF4YcIK"
+1558061940931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558061940931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558061940931	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558061943082	Marionette	INFO	Listening on port 32903
+1558061943163	Marionette	WARN	TLS certificate errors will be ignored for this session
+1558062049431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UVsAVMs1xzWo"
+1558062049785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558062049785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558062049785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558062051962	Marionette	INFO	Listening on port 35095
+1558062052041	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-155-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+[Parent 20642, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558076761608	Marionette	INFO	Stopped listening on port 35095
+[Parent 20196, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 20196, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 20196, Gecko_IOThread] WARNING: pipe error (110): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558076763460	Marionette	INFO	Stopped listening on port 32903
+1558080226101	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UyVIdlwKd53O"
+1558080228777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558080228777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558080228777	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558080234838	Marionette	INFO	Listening on port 40317
+1558080234853	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 814: TypeError: $(...).attrchange is not a function
+
+(/usr/lib/firefox/firefox:842): dconf-WARNING **: 15:04:22.776: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1558080581404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ufkY8IPZzFQ0"
+1558080581857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558080581857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558080581858	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558080584495	Marionette	INFO	Listening on port 41895
+1558080584519	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+
+(/usr/lib/firefox/firefox:2291): dconf-WARNING **: 15:10:17.232: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1558080716965	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rfJ5eRFJVAuQ"
+1558080717679	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558080717680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558080717680	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558080721035	Marionette	INFO	Listening on port 33465
+1558080721163	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+
+(/usr/lib/firefox/firefox:3025): dconf-WARNING **: 15:12:17.838: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1558080741314	Marionette	INFO	Stopped listening on port 33465
+[Parent 2930, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: , line 0: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[Parent 2930, Gecko_IOThread] WARNING: pipe error (109): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558080910544	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7aJodXgvxkkM"
+1558080911613	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558080911614	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558080911614	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558080914842	Marionette	INFO	Listening on port 43719
+1558080914876	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558080935421	Marionette	INFO	Stopped listening on port 43719
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 1922, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558080976909	Marionette	INFO	Stopped listening on port 41895
+[Parent 672, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558080978353	Marionette	INFO	Stopped listening on port 40317
+1558080980037	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZKiR0nyhPsOz"
+1558080980441	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558080980441	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558080980441	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558080982794	Marionette	INFO	Listening on port 38327
+1558080982847	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558081002979	Marionette	INFO	Stopped listening on port 38327
+[Parent 3766, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558081242142	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.31sOkRDvFNzp"
+1558081242550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558081242550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558081242550	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558081244829	Marionette	INFO	Listening on port 35197
+1558081244856	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558081264998	Marionette	INFO	Stopped listening on port 35197
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+[Parent 4376, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558081419407	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.R5GNzDwnHBbc"
+1558081419785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558081419785	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558081419786	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558081422038	Marionette	INFO	Listening on port 45469
+1558081422117	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558081442222	Marionette	INFO	Stopped listening on port 45469
+JavaScript error: resource://gre/modules/WebProgressChild.jsm, line 61: TypeError: this.mm.content is null
+[Parent 4801, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1558081636200	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1KPXx7Ge8v3v"
+1558081636535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558081636535	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558081636536	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558081638920	Marionette	INFO	Listening on port 33415
+1558081639010	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558081659105	Marionette	INFO	Stopped listening on port 33415
+1558081683906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8fJWDDO6QT7l"
+1558081684215	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558081684215	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558081684215	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558081687004	Marionette	INFO	Listening on port 42133
+1558081687024	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1558081918184	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ilSUNgWgcBXx"
+1558081918590	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558081918591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558081918591	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558081921550	Marionette	INFO	Listening on port 35745
+1558081921598	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+
+(/usr/lib/firefox/firefox:6668): dconf-WARNING **: 15:32:45.665: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+JavaScript error: https://news.detik.com/berita/d-4553035/situng-kpu-86-jokowi-unggul-158-juta-suara-dari-prabowo, line 924: TypeError: $(...).attrchange is not a function
+1558082126324	Marionette	INFO	Stopped listening on port 35745
+[Parent 6464, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 5809, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+
+(/usr/lib/firefox/firefox:6048): dconf-WARNING **: 15:36:12.541: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+1558082219571	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bo6Diw7jbfoK"
+1558082220086	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1558082220087	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1558082220087	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1558082223731	Marionette	INFO	Listening on port 40683
+1558082223786	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.izooto.com/scripts/sdk/izooto.js, line 1: Error: Duplicate Pixel Found !!
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://news.detik.com/berita/d-4552517/jokowi-segera-sahkan-100-formasi-baru-untuk-perwira-tinggi-tni, line 924: TypeError: $(...).attrchange is not a function
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11433679752896238612/upload/index.js, line 529: TypeError: this.exit is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11433679752896238612/upload/index.js, line 539: ReferenceError: gotoAndPlay is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11433679752896238612/upload/index.js, line 555: ReferenceError: gotoAndPlay is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/11433679752896238612/upload/index.js, line 529: TypeError: this.exit is undefined
+1558082475067	Marionette	INFO	Stopped listening on port 40683
+[Parent 7254, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-OLGGCZ/firefox-66.0.5+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
