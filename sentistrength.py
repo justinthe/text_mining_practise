@@ -5,6 +5,22 @@ import numpy as numpy
 
 class sentistrength:
 
+	@classmethod
+	def init(cls):
+		config = dict()
+		config["negation"] = True
+		config["booster"]  = True
+		config["ungkapan"]  = True
+		config["consecutive"]  = True
+		config["repeated"]  = True
+		config["emoticon"]  = True
+		config["question"]  = True
+		config["exclamation"]  = True
+		config["punctuation"]  = True
+		return cls(config)
+
+
+
 	def __init__(self, config=dict()):
 		base = 'sentistrength/'
 		negatingword_txt = base + 'negatingword.txt'
@@ -14,7 +30,7 @@ class sentistrength:
 		idiomsfile_txt = base + 'idioms_id.txt'
 		boosterwordsfile_txt = base + 'boosterwords_id.txt'
 
-		print(negatingword_txt)
+		# print(negatingword_txt)
 
 		self.negasi = [line.replace('\n', '') for line in open(negatingword_txt).read().splitlines()]
 		self.tanya = [line.replace('\n', '') for line in open(tanya_txt).read().splitlines()]
@@ -100,6 +116,7 @@ class sentistrength:
 			self.score -= 1
 
 	def cek_ungkapan(self, bigram, trigram, i):
+		#print("Len:", len(self.sentence_score))
 		bigram = ' '.join(bigram)
 		trigram = ' '.join(trigram)
 		ungkapan_score = self.ungkapan(bigram)
@@ -163,6 +180,7 @@ class sentistrength:
 		self.sentences_max_pos = 1
 		self.sentences_score = []
 		self.sentences_text = []
+		ret_lst = []
 		
 		for sentence in sentences:
 			self.max_neg = -1
@@ -185,27 +203,33 @@ class sentistrength:
 			self.pre_max_neg = []
 
 			for i, term in enumerate(terms):
+				#print('cp1')
 				is_extra_char = False
 				plural = ''
 				self.score = 0
 
 				if re.search(r'([A-Za-z])\1{3,}', term):
 					is_extra_char = True
+				#print('cp2')
 
 				term = self.remove_extra_repeated_char(term)
+				#print('cp3')
 
 				if re.search(r'([A-Za-z]+)\-\1',term):
 					plural = term
 					term = self.plural_to_singular(term)
+				#print('cp4')
 
 				# get senti score
 				self.score = self.senti(term)
 				# print("Senti score: ", term, self.score)
+				#print('cp5')
 
 				# negation handler
 				if self.negation_conf and self.score != 0 and i > 0:
 					self.cek_negationword(terms[i-1], terms[i-2])
 				# print("Negation score: ", term, self.score)
+				#print('cp6')
 
 				# boosterword handler
 				if self.booster_conf and self.score != 0 and i > 0 and i <= (terms_length-1):
@@ -213,9 +237,12 @@ class sentistrength:
 				if self.booster_conf and self.score != 0 and i >= 0 and i < (terms_length-1):
 					self.cek_boosterword(terms[i+1])
 				# print("Booster score: ", term, self.score)
+				#print('cp7')
 
 				# idiom/ungkapan handler
+				#print("-i: " + str(i) + "; terms_length: " + str(terms_length) + "; -1: " + terms[i-1] + "; -2: " + terms[i-2])
 				if self.ungkapan_conf and i > 0 and i <= (terms_length-1):
+					#print("i: " + str(i) + "; terms_length: " + str(terms_length) + "; -1: " + terms[i-1] + "; -2: " + terms[i-2])
 					self.cek_ungkapan([terms[i-1],term], [terms[i-2],terms[i-1],term], i)
 				# print("Idiom score: ", term, self.score)
 
@@ -265,12 +292,14 @@ class sentistrength:
 				if plural != '':
 					term = plural
 
-				self.sentence_text += '{}'.format(term)
+				self.sentence_text += ' {}'.format(term)
 				if self.score != 0:
 					term = '{} [{}]'.format(term, self.score)
-					self.sentence_score.append(term)
+				
+				self.sentence_score.append(term)
+				#print("Sentence score: ", self.sentence_score)
 
-			self.senteces_text.append(self.sentence_text)
+			self.sentences_text.append(self.sentence_text)
 			self.sentences_score.append(' '.join(self.sentence_score))
 
 			if self.is_tanya:
@@ -278,26 +307,40 @@ class sentistrength:
 
 			self.sentences_max_pos = self.max_pos if self.max_pos > self.sentences_max_pos else self.sentences_max_pos
 			self.sentences_max_neg = self.max_neg if self.max_neg < self.sentences_max_neg else self.sentences_max_neg
+
 			# print(self.sentences_max_pos, self.sentences_max_neg)
 
 		sentence_result = self.classify()
 		# print(self.sentences_text)
+		ret = self.sentences_score
+		ret_lst.append(self.sentences_score)
+		ret_lst.append(self.sentences_max_pos)
+		ret_lst.append(self.sentences_max_neg)
+		ret_lst.append(sentence_result)
 
-		return {"classified_text":". ".join(self.sentences_score),"tweet_text":". ".join(self.sentences_text),"sentence_score":self.sentences_score,"max_positive":self.sentences_max_pos,"max_negative":self.sentences_max_neg,"kelas":sentence_result}
+		# return {
+		# 		"classified_text":". ".join(self.sentences_score),
+		# 		"tweet_text":". ".join(self.sentences_text),
+		# 		"sentence_score":self.sentences_score,
+		# 		"max_positive":self.sentences_max_pos,
+		# 		"max_negative":self.sentences_max_neg,
+		# 		"kelas":sentence_result
+		# 		}
+		return ret_lst
+		
 
-config = dict()
-config["negation"] = True
-config["booster"]  = True
-config["ungkapan"]  = True
-config["consecutive"]  = True
-config["repeated"]  = True
-config["emoticon"]  = True
-config["question"]  = True
-config["exclamation"]  = True
-config["punctuation"]  = True
-senti = sentistrength(config)
-print(senti.main("agnezmo pintar dan cantik sekali tetapi lintah darat :)"))
+# config = dict()
+# config["negation"] = True
+# config["booster"]  = True
+# config["ungkapan"]  = True
+# config["consecutive"]  = True
+# config["repeated"]  = True
+# config["emoticon"]  = True
+# config["question"]  = True
+# config["exclamation"]  = True
+# config["punctuation"]  = True
+# senti = sentistrength(config)
+# print(senti.main("agnezmo pintar dan cantik sekali tetapi lintah darat :)"))
 
-print("help")
 #s = sentistrength()
-print('end')
+#print('end')
