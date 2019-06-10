@@ -1,7 +1,9 @@
 import argparse
-import nltk, re, string
+# import nltk
+import re, string
 import pandas as pd
 from collections import Counter
+
 
 def letter_only(input):
 	r = re.match('^[a-zA-Z]+$', input)
@@ -9,7 +11,6 @@ def letter_only(input):
 		return False
 	else:
 		return True
-
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--infile', default='content.txt', help='input filename')
@@ -29,8 +30,11 @@ count_lst = []
 output_dict = {}
 
 for word, count in wordfreqs.items():
-	word_lst.append(word)
-	count_lst.append(count)
+	# if count < 3, discard -> unimportant
+	# if letter_only(word) and len(word) > 1 and count > 3:
+	if len(word) > 1 and count > 3:
+		word_lst.append(word)
+		count_lst.append(count)
 	
 output_dict = { 'word': word_lst,
 				'count': count_lst }
