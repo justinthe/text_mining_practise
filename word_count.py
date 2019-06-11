@@ -1,5 +1,5 @@
 import argparse
-# import nltk
+import nltk
 import re, string
 import pandas as pd
 from collections import Counter
@@ -33,6 +33,8 @@ for word, count in wordfreqs.items():
 	# if count < 3, discard -> unimportant
 	# if letter_only(word) and len(word) > 1 and count > 3:
 	if len(word) > 1 and count > 3:
+		word = word.strip(string.punctuation).lower()
+	if word not in nltk.corpus.stopwords.words('indonesian'):
 		word_lst.append(word)
 		count_lst.append(count)
 	
