@@ -3,7 +3,7 @@ import nltk
 import re, string
 import pandas as pd
 from collections import Counter
-
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 def letter_only(input):
 	r = re.match('^[a-zA-Z]+$', input)
@@ -11,6 +11,9 @@ def letter_only(input):
 		return False
 	else:
 		return True
+
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
 
 ap = argparse.ArgumentParser()
 ap.add_argument('-i', '--infile', default='content.txt', help='input filename')
@@ -20,10 +23,16 @@ args = vars(ap.parse_args())
 infile = args['infile']
 output = args['output']
 
-filename = open(infile, 'r')
+# filename = open(infile, 'r')
 words = re.findall(r'\w+', open(infile, encoding='utf-8').read().lower())
+
+for idx, word in enumerate(words):
+	words[idx] = stemmer.stem(word)
+	# word = stemmer.stem(word)
+# words = [stemmer.stem(word) for word in words]
+
 wordfreqs = Counter(words)
-filename.close()
+# filename.close()
 
 word_lst = []
 count_lst = []
