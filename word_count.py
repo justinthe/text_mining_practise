@@ -21,7 +21,7 @@ infile = args['infile']
 output = args['output']
 
 filename = open(infile, 'r')
-words = re.findall(r'\w+', open(infile).read().lower())
+words = re.findall(r'\w+', open(infile, encoding='utf-8').read().lower())
 wordfreqs = Counter(words)
 filename.close()
 
@@ -31,10 +31,8 @@ output_dict = {}
 
 for word, count in wordfreqs.items():
 	# if count < 3, discard -> unimportant
-	# if letter_only(word) and len(word) > 1 and count > 3:
-	if len(word) > 1 and count > 3:
+	if word not in nltk.corpus.stopwords.words('indonesian') and len(word) > 1 and count > 3:
 		word = word.strip(string.punctuation).lower()
-	if word not in nltk.corpus.stopwords.words('indonesian'):
 		word_lst.append(word)
 		count_lst.append(count)
 	
