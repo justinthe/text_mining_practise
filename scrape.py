@@ -40,12 +40,14 @@ br = start_browser()
 all_results = []
 
 now = datetime.now()
+# folder = '../result/'
+# filename = folder + search_term + '_' + now.strftime('%Y') + now.strftime('%m') + now.strftime('%d') + '_result.txt'
 filename = search_term + '_' + now.strftime('%Y') + now.strftime('%m') + now.strftime('%d') + '_result.txt'
-# print(filename)
+print(filename)
 
 f = open(filename, 'w+')
 
-for page_num in range(pages):
+for page_num in range(int(pages)):
 	page_num = page_num + 1
 	go_to_page(br, page_num, search_term)
 	title_urls = scrape_results(br)
